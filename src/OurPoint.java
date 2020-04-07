@@ -41,6 +41,12 @@ public class OurPoint {
 	public void setY(int newY) {
 		xyCoords.y = newY;
 	}
+	// changes the x and y value by the dx and dy
+	public void movePoint() {
+		xyCoords.x += dx;
+		xyCoords.y += dy;
+		
+	}
 	
 
 }

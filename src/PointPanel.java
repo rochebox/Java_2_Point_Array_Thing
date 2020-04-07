@@ -28,7 +28,7 @@ public class PointPanel extends JPanel implements ActionListener{
 		numPoints = howManyPoints;
 		pList = new OurPoint[numPoints];
 		
-		t = new Timer(250, this);
+		t = new Timer(50, this);
 		t.restart();
 		
 		
@@ -64,6 +64,7 @@ public class PointPanel extends JPanel implements ActionListener{
 		g.fillRect(0, 0, pWidth, pHeight);
 		
 		int pointR= 4;
+		//int pointR = (int)(Math.random() * 3) + 2;
 		g.setColor(pColor);
 		for(int i = 0 ; i  < numPoints; i++ ) {
 			g.fillOval(
@@ -96,11 +97,23 @@ public class PointPanel extends JPanel implements ActionListener{
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
 		
-		System.out.println("Hey I'm awake");
+		//System.out.println("Hey I'm awake");
 		
 		//Pseudo Code
 		// move all our points....
+		
+		moveAllPoints();
 		// redraw...
+		repaint();
+	}
+	
+	private void moveAllPoints() {
+		
+		//move all the points on pList
+		for(int i = 0; i < pList.length; i++)
+		{
+			//pList[i].movePoint();
+		}
 		
 	}
 	

@@ -7,13 +7,14 @@ public class PointRunner {
 		
 		int sWidth  = 700;
 		int sHeight = 500; 
+		int numPoints = 15;
 		
 		JFrame f = new JFrame("Point Array Thingy");
 		
 		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		f.setSize(sWidth, sHeight);
 		
-		PointPanel p = new PointPanel(sWidth, sHeight-22, 10); 
+		PointPanel p = new PointPanel(sWidth, sHeight-22, numPoints); 
 		f.add(p);
 		
 		f.setVisible(true);
