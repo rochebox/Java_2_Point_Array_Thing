@@ -12,7 +12,7 @@ public class PointPanel extends JPanel implements ActionListener{
 
 	
 	
-	OurPoint[] pList;
+	OurPoint3[] pList;
 	int pWidth,  pHeight;
 	int numPoints;
 	Timer t;
@@ -26,9 +26,9 @@ public class PointPanel extends JPanel implements ActionListener{
 		pWidth = w ;
 		pHeight = h;
 		numPoints = howManyPoints;
-		pList = new OurPoint[numPoints];
+		pList = new OurPoint3[numPoints];
 		
-		t = new Timer(50, this);
+		t = new Timer(250, this);
 		t.restart();
 		
 		
@@ -47,7 +47,7 @@ public class PointPanel extends JPanel implements ActionListener{
 		
 		*/
 		for(int i = 0 ; i  < numPoints; i++ ) {
-			 pList[i] = new OurPoint (
+			 pList[i] = new OurPoint3 (
 					 new Point(
 					 (int)(Math.random() * pWidth), 
 					 (int)(Math.random() * pHeight)
@@ -76,7 +76,7 @@ public class PointPanel extends JPanel implements ActionListener{
 		
 		// lines -- we should make this more efficient
 		for(int j = 0; j < numPoints; j++) {
-			OurPoint startPoint = pList[j];
+			OurPoint3 startPoint = pList[j];
 			
 			for(int i = 0; i < numPoints; i++) {
 				
@@ -112,7 +112,7 @@ public class PointPanel extends JPanel implements ActionListener{
 		//move all the points on pList
 		for(int i = 0; i < pList.length; i++)
 		{
-			//pList[i].movePoint();
+			pList[i].movePoint();
 		}
 		
 	}

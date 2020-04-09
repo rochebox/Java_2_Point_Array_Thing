@@ -7,7 +7,7 @@ public class PointRunner {
 		
 		int sWidth  = 700;
 		int sHeight = 500; 
-		int numPoints = 15;
+		int numPoints = 10;
 		
 		JFrame f = new JFrame("Point Array Thingy");
 		

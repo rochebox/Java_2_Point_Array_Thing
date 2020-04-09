@@ -6,6 +6,10 @@ public class OurPoint {
 	int dx;   // speed along x axis 5 and -5
 	int dy;   // speed along y axis 5 and -5
 	
+	//We would include ellipse equation points
+	
+	
+	
 	//constructor...
 	public OurPoint(Point p) {
 		// copy p into our class field
